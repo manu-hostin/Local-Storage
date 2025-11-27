@@ -6,15 +6,32 @@
     <title>Local-Storage</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body id="claro">
+    <button class="tema-claro">Tema Claro</button>
+    <button class="tema-escuro">Tema Escuro</button>
+
     <div id="container">
         <div class="bem-vindo">
             <h1>Bem-vindo(a)</h1>
         </div>
         <h2>Qual seu nome?</h2>
         <input type="text" id="nome-input" placeholder="Digite seu nome aqui">
+        <button id="salvar">Salvar nome</button>
     </div>
 
-    <link rel="stylesheet" href="script.js">
+    <div id="container-dois">
+        <h2>Qual sua tarefa?</h2>
+        <input type="text" id="tarefa" placeholder="Digite aqui sua tarefa">
+        <button id="adicionar">Adicionar</button>
+
+        <ul id="lista-tarefas"></ul>
+    </div>
+    
+    <div id="container-tres">
+        <p>Você já visitou essa página <span id="contador"></span> vezes.</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
