@@ -54,8 +54,8 @@ document.getElementById("contador").textContent = contador;
 localStorage.setItem("contadorVisitas", contador);
 
 // Questão 4 //
-const temaEscuro = document.getElementById('tema-escuro');
-const temaClaro = document.getElementById('tema-claro');
+const temaEscuro = document.querySelector('.tema-escuro');
+const temaClaro = document.querySelector('.tema-claro');
 
 temaClaro.addEventListener("click", function(){
     document.body.className = "claro";
